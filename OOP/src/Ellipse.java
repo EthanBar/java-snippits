@@ -6,7 +6,7 @@ class Ellipse extends Shape {
         super(p, x, y);
     }
 
-    void drawer(float x, float y, float size) {
-        p.ellipse(x, y,size,size);
+    void drawer(float x, float y) {
+        p.ellipse(x, y,10,10);
     }
 }
