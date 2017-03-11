@@ -1,14 +1,12 @@
 import processing.core.PApplet;
 
+class Ellipse extends Shape {
 
-class Rectangle extends Shape {
-
-    Rectangle(PApplet p, float x, float y) {
+    Ellipse(PApplet p, float x, float y) {
         super(p, x, y);
     }
 
     void drawer(float x, float y) {
-        p.rect(x, y,10,10);
+        p.ellipse(x, y,10,10);
     }
-
 }

@@ -8,12 +8,12 @@ public class Sketch extends PApplet{
         //smooth();
     }
 
-    Rectangle[] obj = new Rectangle[1000];
-    Random ran = new Random();
+    private Ellipse[] obj = new Ellipse[1000];
+    private Random ran = new Random();
 
     public void setup() {
         for (int i = 0; i < obj.length; i++) {
-            obj[i] = new Rectangle(this,ran.nextInt(width),ran.nextInt(height));
+            obj[i] = new Ellipse(this,ran.nextInt(width),ran.nextInt(height));
         }
     }
 
