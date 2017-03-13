@@ -1,3 +1,5 @@
+package Dna;
+
 import processing.core.PApplet;
 
 
@@ -7,8 +9,8 @@ class Rectangle extends Shape {
         super(p, x, y);
     }
 
-    void drawer(float x, float y) {
-        p.rect(x, y,10,10);
+    void drawer(float x, float y, float size) {
+        p.rect(x, y,size,size);
     }
 
 }

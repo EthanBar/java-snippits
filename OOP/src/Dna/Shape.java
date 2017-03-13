@@ -1,3 +1,5 @@
+package Dna;
+
 import processing.core.PApplet;
 
 abstract class Shape {
@@ -22,7 +24,11 @@ abstract class Shape {
     }
 
     void setX(float x){
-        this.x = x % p.width;
+        if (x >= 0){
+            this.x = x % p.width;
+        } else {
+            this.x = x % p.width + p.width;
+        }
     }
 
     float getX(){
